@@ -6,6 +6,8 @@ body {
 
 body {
     @include serif-font;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 hr {
@@ -71,6 +73,22 @@ aside {
     padding: 0;
 }
 
+.beta-badge {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-radius: .25rem;
+    font-size: 15px;
+}
+
+.affix .beta-badge {
+    color: #f8f9fa !important;
+    background-color: #777 !important;
+}
+
+.no-text-transform {
+    text-transform: none;
+}
+
 // Navigation
 
 .navbar-default {
@@ -81,6 +99,7 @@ aside {
     .navbar-header .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
+        font-size: 20px;
         font-weight: 700;
         text-transform: uppercase;
         &:hover,
@@ -94,7 +113,7 @@ aside {
             > a:focus {
                 text-transform: uppercase;
                 font-weight: 700;
-                font-size: 13px;
+                font-size: 14px;
                 color: $theme-dark;
                 &:hover {
                     color: $theme-primary;
@@ -116,7 +135,6 @@ aside {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
             &:hover,
             &:focus {
                 color: white;
@@ -134,7 +152,6 @@ aside {
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
-                font-size: 14px;
                 &:hover,
                 &:focus {
                     color: darken($theme-primary, 10%);
