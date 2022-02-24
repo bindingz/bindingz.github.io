@@ -57,6 +57,10 @@ p {
     color: white;
 }
 
+.bg-tertiary {
+    background-color: $theme-tertiary;
+}
+
 .text-faded {
     color: rgba(white, .7);
 }
@@ -74,15 +78,11 @@ aside {
 }
 
 .beta-badge {
-    color: #212529;
-    background-color: #f8f9fa;
-    border-radius: .25rem;
-    font-size: 15px;
-}
-
-.affix .beta-badge {
     color: #f8f9fa !important;
     background-color: #777 !important;
+    border-radius: .25rem;
+    font-size: 15px;
+    @include transition-all;
 }
 
 .no-text-transform {
@@ -134,18 +134,16 @@ aside {
     @media (min-width: 768px) {
         background-color: transparent;
         border-color: rgba(white, .3);
-        .navbar-header .navbar-brand {
-            &:hover,
-            &:focus {
-                color: white;
-            }
-        }
         .nav > li > a,
         .nav > li > a:focus {
             color: rgba(white, .7);
             &:hover {
                 color: white;
             }
+        }
+        .beta-badge {
+            color: #212529 !important;
+            background-color: #f8f9fa !important;
         }
         &.affix {
             background-color: white;
@@ -163,6 +161,10 @@ aside {
                 &:hover {
                     color: $theme-primary;
                 }
+            }
+            .beta-badge {
+                color: #f8f9fa !important;
+                background-color: #777 !important;
             }
         }
     }
