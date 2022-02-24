@@ -44,8 +44,16 @@ p {
     margin-bottom: 20px;
 }
 
+.bz-colour-primary {
+    color: $theme-primary;
+}
+
 .bz-colour-tertiary {
     color: $theme-tertiary;
+}
+
+.bz-colour-dark {
+    color: $theme-dark;
 }
 
 .bg-primary {
@@ -348,6 +356,12 @@ header {
     padding: 0px 0px 20px 0px;
     a {
         color: $theme-dark !important;
+    }
+}
+
+#about {
+    h2 {
+        color: white;
     }
 }
 
